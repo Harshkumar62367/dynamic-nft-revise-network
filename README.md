@@ -1,2 +1,2 @@
-# nft-tutorial
-Starter tutorial boilerplate for NFT
+# Revise Network Dynamic NFT
+- Testing Revise Network
