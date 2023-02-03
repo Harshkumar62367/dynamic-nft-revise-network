@@ -1,0 +1,16 @@
+https://revise-testing.fra1.cdn.digitaloceanspaces.com/doggo/neutral.png
+https://revise-testing.fra1.cdn.digitaloceanspaces.com/doggo/angry.png
+https://revise-testing.fra1.cdn.digitaloceanspaces.com/doggo/sad.png
+https://revise-testing.fra1.cdn.digitaloceanspaces.com/doggo/happy.png
+
+// mock Pet mood API
+const API = async function() {
+  const options = [
+    {mood: 'Neutral', image: "https://revise-testing.fra1.cdn.digitaloceanspaces.com/doggo/neutral.png"},
+    {mood: 'Angry', image: "https://revise-testing.fra1.cdn.digitaloceanspaces.com/doggo/angry.png"},
+    {mood: 'Sad', image: "https://revise-testing.fra1.cdn.digitaloceanspaces.com/doggo/sad.png"},
+    {mood: 'Happy', image: "https://revise-testing.fra1.cdn.digitaloceanspaces.com/doggo/happy.png"}
+  ]
+  const randomIndex =  Math.floor(Math.random() * 4)
+  return options[randomIndex];
+}
